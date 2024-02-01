@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+:root {
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --coloor-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+
+    --fs-sm: 14px;
+    --fs-p: 16px;
+    --fs-big: 24px;
+
+    --fw-normal: 600;
+    --fw-bold: 800;
+
+    --ff: 'Figtree', sans-serif;
+
+    --radius: 1.5rem;
+}
+
+* {
+    padding:0px;
+}
+
+
+body {
+    background: var(--color-yellow);
+    font-family: var(--ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius);
+    max-width: 390px;
+    padding: 20px;
+}
+
+.shadow {
+    -webkit-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, );
+}
+
+.card__image img {
+    border-radius: var(--radius);
+    width: 100%;
+}
+
+
+.card_body__button button {
+    background: var(--color-yellow);
+    font-weight: var(--fw-bold);
+    border-radius: 5px;
+    padding: 5px;
+    margin:10px 0;
+    border: 0;
+}
+
+.card_body__title h1 {
+    font-size: var(--fs-big);
+}
+
+.card_body__text p{
+    color: var(--coloor-grey);
+}
+
+.card_body__sign_avatar img{
+    width: 30px;
+}
+
+
+.card_body__sign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card_body__sign_Name {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-left: 10px;
+}
